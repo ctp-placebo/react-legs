@@ -1,0 +1,21 @@
+@import './../App.css';
+
+.plus-minus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plus, .minus {
+    border: none;
+    background-color: unset;
+}
+
+.plus {
+    font-size: 3rem;
+    color: var(--blue);
+}
+.minus {
+    font-size: 2rem;
+    color: var(--maize);
+}

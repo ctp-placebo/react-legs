@@ -1,0 +1,68 @@
+@import './../App.css';
+
+.sign-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    min-height: 7rem;;
+}
+/* inside a card */
+.sign-item__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.sign-item__nrlegs {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--indianred);
+    background-color: rgba(253, 231, 76, 0.2);
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 12px;
+}
+
+.sign-item__image {
+    width: 5rem;
+}
+.sign-item__detail h2 {
+    color: var(--blue);
+    display: block;
+    min-width: 12rem;
+}
+
+/* > 500px */
+@media (min-width: 500px) {
+    .sign-item__detail {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1;
+    }
+    .sign-item__detail h2 {
+        font-size: 1.25rem;
+    }
+    .sign-item__detail h2 button {
+        margin-left: 0.65rem;
+        background-color: rgb(240, 240, 240);
+        border: none;
+        border-radius: 50%;
+        padding: 0.5rem 0.7rem;
+        box-shadow:1px 1px 3px var(--blue);
+
+    }
+    .sign-item__nrlegs {
+        font-size: 1.25rem;
+        padding: 0.5rem 1.5rem;
+    }
+}

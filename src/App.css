@@ -1,0 +1,58 @@
+/*
+ Midlertidig thema:
+ */
+ .theme {
+  color: #4C5B5C; /* blå grå*/
+  color: #3891A6; /* blå */
+  color: #FDE74C; /* maize */
+  color: #DB5461; /* indian red*/
+ color: #E3655B; /* bittersweet */
+}
+
+:root {
+  --bluegrey: #4C5B5C;
+  --blue: #3891A6;
+  --maize: #FDE74C;
+  --indianred: #DB5461;
+  --orange: #E3655B;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #4C5B5C;
+  height: 6rem;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h2-p {
+  color: var(--maize);
+  color: #50C878;
+  font-size: 3rem;
+  margin-top: -1rem;
+  background-color: rgb(83, 211, 247);
+  width: 8rem;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+

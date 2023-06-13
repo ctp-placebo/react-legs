@@ -1,0 +1,21 @@
+.signs-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.signs-list__default {
+    color: black;
+    text-align: center;
+}
+
+.total-legs {
+    color: #FDE74C;
+    font-weight: bold;
+    margin-bottom: -2rem;
+}
+.total-legs span {
+    font-size: 4rem;
+}
