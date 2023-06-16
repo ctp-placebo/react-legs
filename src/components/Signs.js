@@ -1,10 +1,8 @@
 import SignsList from './SignsList';
-import Card from '../UI/Card';
 import './Signs.css';
 
 // Collects together sign components:
-// signs imports < SignList imports < SignItem
-// Filter and UI/Card. 
+// signs imports < SignList imports < SignItem imports < plusMinusBtns
 
 const Signs = (props) => { 
 
