@@ -15,12 +15,14 @@ const SignsList = props => {
     }
 
     const [totalLegs, setTotalLegs] = useState(0);
-    const handleAddLegs = (number) => {
-        setTotalLegs((preTotal) => preTotal + number);
+    const handleAddLegs = (numberLegs) => {
+        setTotalLegs((preTotal) => preTotal + numberLegs);
     };
     
-    const handleSubtractLegs = (number) => {
-        setTotalLegs((preTotal) => preTotal - number);
+    const handleSubtractLegs = (numberLegs) => {
+        if (totalLegs > 0) {
+            setTotalLegs((preTotal) => preTotal - numberLegs);
+        }
     };
  
 

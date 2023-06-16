@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Icon } from '@iconify/react';
 import PlusMinusBtns from "./PlusMinusBtns";
 
 import Card from '../UI/Card';
@@ -20,8 +19,10 @@ const SignItem = (props) => {
         props.onAdd();
     }
     const handleCounterSubtract = () => {
-        setCounter((preCounter) => preCounter - 1);
-        props.onSubtract();
+        if (counter > 0) {
+            setCounter((preCounter) => preCounter = preCounter - 1);
+            props.onSubtract();
+        }
     }
 
     return (
