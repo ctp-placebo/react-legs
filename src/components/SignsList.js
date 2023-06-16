@@ -15,14 +15,16 @@ const SignsList = props => {
     }
 
     const [totalLegs, setTotalLegs] = useState(0);
-    const [singleSignCounter, setSingleSignCounter] = useState(0);
-    const handleAddLegs = (number) => {
-        setTotalLegs((preTotal) => preTotal + number);
+    const handleAddLegs = (numberLegs) => {
+        setTotalLegs((preTotal) => preTotal + numberLegs);
     };
     
-    const handleSubtractLegs = (number) => {
-        setTotalLegs((preTotal) => preTotal - number);
+    const handleSubtractLegs = (numberLegs) => {
+        if (totalLegs > 0) {
+            setTotalLegs((preTotal) => preTotal - numberLegs);
+        }
     };
+ 
 
     return(
         <div>
@@ -31,12 +33,13 @@ const SignsList = props => {
                 {
                     props.items.map((sign) => (
                         <SignItem
-                        key={sign.id}
-                        name={sign.name}
-                        numberLegs={sign.numberLegs}
-                        signImg={require('../assets/signImages/' + sign.signImg) }
-                        onAdd={() => handleAddLegs(sign.numberLegs)}
-                        onSubtract={() => handleSubtractLegs(sign.numberLegs)}
+                            key={sign.id}
+                            name={sign.name}
+                            namePlural={sign.namePlural}
+                            numberLegs={sign.numberLegs}
+                            signImg={require('../assets/signImages/' + sign.signImg) }
+                            onAdd={() => handleAddLegs(sign.numberLegs)}
+                            onSubtract={() => handleSubtractLegs(sign.numberLegs)}
                         />
                     )
                 )}

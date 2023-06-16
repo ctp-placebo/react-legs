@@ -1,13 +1,11 @@
-import { useState } from "react";
 import {Icon} from '@iconify/react';
-
 import './PlusMinusBtns.css';
 
-const PlusMinusBtns = ({onAdd, onSubtract, nrClicks}) => {
+const PlusMinusBtns = ({onSubtract, onAdd}) => {
 
     return (
         <div className="plus-minus">
-            
+
             <button className="minus" onClick={onSubtract}>
                 <Icon icon="ep:remove-filled" />
             </button>

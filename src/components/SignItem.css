@@ -41,6 +41,11 @@
     min-width: 12rem;
 }
 
+.sign-counter {
+    font-size: 0.75rem;
+    color: var(--blue);
+}
+
 /* > 500px */
 @media (min-width: 500px) {
     .sign-item__detail {
